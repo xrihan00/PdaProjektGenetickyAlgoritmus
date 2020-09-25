@@ -10,7 +10,7 @@ public class MujRobot extends Robot {
 	 * MyFirstRobot's run method - Seesaw
 	 */
 	public void run() {
-		//superkoment
+
 		while (true) {
 			ahead(100); // Move ahead 100
 			turnGunRight(360); // Spin gun around
