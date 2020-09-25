@@ -18,5 +18,17 @@
 	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.ui.editor-1.9.3.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.ui-1.9.3.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/roborumble.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/bcel-6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/codesize-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/picocontainer-2.14.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.battle-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.core-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.host-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.repository-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.sound-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.ui.editor-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/robocode.ui-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monča/git/PdaProjektGenetickyAlgoritmus/lib/roborumble.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
