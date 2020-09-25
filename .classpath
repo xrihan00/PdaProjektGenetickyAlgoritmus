@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="PdaProjekt/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/bcel-6.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/codesize-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/picocontainer-2.14.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.battle-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.core-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.host-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.repository-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.sound-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.ui.editor-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/robocode.ui-1.9.3.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/PdaProjekt/lib/roborumble.jar"/>
+	<classpathentry kind="lib" path="lib/bcel-6.2.jar"/>
+	<classpathentry kind="lib" path="lib/codesize-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/picocontainer-2.14.2.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.battle-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.core-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.host-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.repository-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.sound-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.ui-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/robocode.ui.editor-1.9.3.7.jar"/>
+	<classpathentry kind="lib" path="lib/roborumble.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

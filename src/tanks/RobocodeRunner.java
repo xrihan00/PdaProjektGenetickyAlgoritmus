@@ -18,7 +18,7 @@ import robocode.control.RobotSpecification;
 public class RobocodeRunner {
 
 	public static void main(String[] args) throws IOException {
-		//test master pull request
+		//test master pull request 2
 		String nazevTridyMehoRobota = "MujRobot";
 		String seznamProtivniku = "Crazy, Corners, Fire";
 
