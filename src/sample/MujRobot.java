@@ -5,7 +5,7 @@ import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
 public class MujRobot extends Robot {
-	
+	//Test jestli to kurva funguje nebo ne
 	/**
 	 * MyFirstRobot's run method - Seesaw
 	 */
