@@ -1,13 +1,17 @@
 package tanks;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-
+import java.util.Random;
+import java.util.Scanner;
+import genetics.*;
 import javax.tools.JavaCompiler;
 import javax.tools.ToolProvider;
 
+import genetics.Population;
 import robocode.BattleResults;
 import robocode.control.BattleSpecification;
 import robocode.control.BattlefieldSpecification;
@@ -19,12 +23,28 @@ public class RobocodeRunner {
 
 	public static void main(String[] args) throws IOException {
 		//test master pull request 2
-		String nazevTridyMehoRobota = "MujRobot";
+		/*String nazevTridyMehoRobota = "MujRobot";
 		String seznamProtivniku = "Crazy, Corners, Fire";
 
-		runRobocode(nazevTridyMehoRobota, seznamProtivniku);
+		runRobocode(nazevTridyMehoRobota, seznamProtivniku);*/
+		Population pop=new Population();
+		Random rand=new Random(System.currentTimeMillis());
+		float[]arr=new float[10];
+		for (int i = 0; i < arr.length; i++) {
+			
+			arr[i]=rand.nextFloat();
+			
+			
+		}
+		float[] genes=new float[]{(float)1.0,(float)2.0,(float)3.0,(float)4.0,(float)5.0,(float)6.5,(float)-9.0,(float)4.5,(float)5465456.0};
+		pop.setGenome("GeneticTank", Population.genomeFloatArrToString(arr));
+		pop.getGenome("GeneticTank");
+		
+		for (float f : genes) {
+			System.out.println(f);
+		}
 	}
-
+	
 	public static void runRobocode(String mujRobot, String seznamProtivniku) throws IOException {
 
 		// create src and dest path for compiling
