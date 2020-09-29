@@ -22,29 +22,29 @@ import robocode.control.RobotSpecification;
 public class RobocodeRunner {
 
 	public static void main(String[] args) throws IOException {
-		//test master pull request 2
-		/*String nazevTridyMehoRobota = "MujRobot";
-		String seznamProtivniku = "Crazy, Corners, Fire";
+		// test master pull request 2
 
-		runRobocode(nazevTridyMehoRobota, seznamProtivniku);*/
-		Population pop=new Population();
-		Random rand=new Random(System.currentTimeMillis());
-		float[]arr=new float[10];
-		for (int i = 0; i < arr.length; i++) {
-			
-			arr[i]=rand.nextFloat();
-			
-			
-		}
-		float[] genes=new float[]{(float)1.0,(float)2.0,(float)3.0,(float)4.0,(float)5.0,(float)6.5,(float)-9.0,(float)4.5,(float)5465456.0};
-		pop.setGenome("GeneticTank", Population.genomeFloatArrToString(arr));
-		pop.getGenome("GeneticTank");
-		
-		for (float f : genes) {
-			System.out.println(f);
-		}
-	}
-	
+		String nazevTridyMehoRobota = "GeneticTank";
+		//String seznamProtivniku = "Crazy, Corners, Fire";
+		String lepsiProtivnici="SuperBoxBot, SuperCorners, SuperCrazy, SuperMercutio, SuperRamFire, SuperSittingDuck, SuperSpinbot, SuperTrackFire, SuperWalls";
+		runRobocode(nazevTridyMehoRobota, lepsiProtivnici);
+
+		/*
+		 * Population pop=new Population(); Random rand=new
+		 * Random(System.currentTimeMillis()); float[]arr=new float[10]; for (int i = 0;
+		 * i < arr.length; i++) {
+		 * 
+		 * arr[i]=rand.nextFloat();
+		 * 
+		 * 
+		 * } float[] genes=new
+		 * float[]{(float)1.0,(float)2.0,(float)3.0,(float)4.0,(float)5.0,(float)6.5,(
+		 * float)-9.0,(float)4.5,(float)5465456.0}; pop.setGenome("GeneticTank",
+		 * Population.genomeFloatArrToString(arr)); pop.getGenome("GeneticTank");
+		 * 
+		 * for (float f : genes) { System.out.println(f); }
+		 */ }
+
 	public static void runRobocode(String mujRobot, String seznamProtivniku) throws IOException {
 
 		// create src and dest path for compiling
@@ -65,6 +65,7 @@ public class RobocodeRunner {
 		for (String string : tanks) {
 			string = "sample." + string + ",";
 			finalListOfTanks += string;
+			
 		}
 
 		finalListOfTanks += "sample." + mujRobot;
@@ -82,11 +83,11 @@ public class RobocodeRunner {
 		engine.addBattleListener(battleListener);
 
 		// Show the battles
-		engine.setVisible(true);
+		engine.setVisible(false);
 
 		// Setup the battle specification
 
-		int numberOfRounds = 5;
+		int numberOfRounds = 100;
 		BattlefieldSpecification battlefield = new BattlefieldSpecification(800, 600); // 800x600
 		// RobotSpecification[] selectedRobots =
 		// engine.getLocalRepository("sample.Corners, sample.MujRobot");

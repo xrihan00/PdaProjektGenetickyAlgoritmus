@@ -1,4 +1,4 @@
-package genetics;
+package sample;
 
 import robocode.*;
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.awt.*;
  */
 public class GeneticTank extends AdvancedRobot {
 	
-	float[] genes=new float[]{(float)0.45263994,(float)0.9678658,(float)0.5536864,(float)0.68358725,(float)0.21696383,(float)0.018446803,(float)0.58713067,(float)0.06392765,(float)0.4270332,(float)0.78203356};
+	float[] genes=new float[]{(float)12,(float)150,(float)140,(float)140,(float)0.21696383,(float)0.9,(float)3,(float)3,(float)15,(float)12};
     int moveDirection=1;//which way to move
     /**
      * run:  Tracker's main run function

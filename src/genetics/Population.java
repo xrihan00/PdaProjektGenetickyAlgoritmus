@@ -49,7 +49,7 @@ public class Population {
 			while (myReader.hasNextLine()) {
 				String data = myReader.nextLine();
 
-				if (data.contains("genes")) {
+				if (data.contains("float[] genes=new float[]{")) {
 					inputBuffer.append("	float[] genes=new float[]{" + genome + "};");
 
 				} else
@@ -79,7 +79,7 @@ public class Population {
 	}
 
 	public static float[] genomeStringtoFloatArr(String str) {
-		//TODO
+		//TODO implementovat
 		return new float[1];
 	}
 }
