@@ -20,12 +20,14 @@ import robocode.control.RobocodeEngine;
 import robocode.control.RobotSpecification;
 import tanks.BattleObserver;
 
-public class DNA {
+public class DNA implements Comparable<DNA> {
 
 	String name;
-	float mutationRate = (float) 0.01;
+	static float mutationRate = (float) 0.4;
 	Random rand;
 	float[] genes;
+	Double fitness;
+	static float mutationSeverity=(float) 0.5;
 	
 
 	public DNA(String name) {
@@ -41,16 +43,16 @@ public class DNA {
 	}
 
 	public DNA(String name, float[] genes) {
-		rand = new Random(System.currentTimeMillis());
+		
 		this.genes = genes;
 		this.name = name;
 		this.makeTank();
 
 	}
 
-	public DNA crossover(DNA first, DNA second, String name) {
-		float[] newgenes = new float[genes.length];
-		int midpoint = genes.length / 2;
+	public static DNA crossover(DNA first, DNA second, String name) {
+		float[] newgenes = new float[10];
+		int midpoint = 5;
 		for (int i = 0; i < newgenes.length; i++) {
 			if (i < midpoint)
 				newgenes[i] = first.genes[i];
@@ -61,15 +63,15 @@ public class DNA {
 		return new DNA(name, newgenes);
 	}
 
-	public DNA mutation() {
-
-		float[] newgenes = new float[genes.length];
-		for (int i = 0; i < genes.length; i++) {
-			float f = genes[i];
+	public static DNA mutate(DNA first,String name) {
+		Random rand = new Random(System.currentTimeMillis());
+		float[] newgenes = new float[10];
+		for (int i = 0; i < 10; i++) {
+			float f = first.genes[i];
 			if (rand.nextFloat() < mutationRate)
-				newgenes[i] = rand.nextFloat() - 1;
+				newgenes[i] = ((rand.nextFloat()*2)-1)*mutationSeverity+first.genes[i];
 			else
-				newgenes[i] = genes[i];
+				newgenes[i] = first.genes[i];
 		}
 		return new DNA(name, newgenes);
 	}
@@ -119,6 +121,11 @@ public class DNA {
 		}
 		res.deleteCharAt(res.lastIndexOf(","));
 		return res.toString();
+	}
+
+	@Override
+	public int compareTo(DNA o) {
+		return Double.compare(o.fitness,this.fitness);
 	}
 
 }
